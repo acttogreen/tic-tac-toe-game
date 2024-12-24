@@ -1,0 +1,35 @@
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid #000;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.player-x {
+    color: red;
+}
+
+.player-o {
+    color: blue;
+}
+
+#player-turn {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
