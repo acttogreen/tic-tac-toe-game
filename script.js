@@ -58,6 +58,7 @@ function updatePlayerTurn() {
     const playerTurnDiv = document.getElementById('player-turn');
     playerTurnDiv.textContent = `Player ${currentPlayer}'s turn`;
     playerTurnDiv.style.transform = 'scale(1.2)';
+    playerTurnDiv.style.textAlign = 'center'; // Center the text
     setTimeout(() => {
         playerTurnDiv.style.transform = 'scale(1)';
     }, 300);

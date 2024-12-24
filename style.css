@@ -47,10 +47,15 @@
     font-size: 1.5em;
     margin-top: 20px;
     transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the div takes full width */
 }
 
 body {
     display: flex;
+    flex-direction: column; /* Arrange items in a column */
     justify-content: center;
     align-items: center;
     height: 100vh;
