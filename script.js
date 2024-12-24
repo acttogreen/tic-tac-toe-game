@@ -57,6 +57,10 @@ function resetBoard() {
 function updatePlayerTurn() {
     const playerTurnDiv = document.getElementById('player-turn');
     playerTurnDiv.textContent = `Player ${currentPlayer}'s turn`;
+    playerTurnDiv.style.transform = 'scale(1.2)';
+    setTimeout(() => {
+        playerTurnDiv.style.transform = 'scale(1)';
+    }, 300);
 }
 
 createBoard();
